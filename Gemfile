@@ -14,12 +14,15 @@ gem 'bcrypt', '~> 3.1.7'
 gem 'slim', '~> 3.0.1'
 
 group :development, :test do
-  gem 'byebug'
+  gem 'better_errors', '~> 2.1.1'
   gem 'web-console', '~> 2.0'
   gem 'spring'
+  gem 'pry', '~> 0.10.1'
 end
 
 group :test do
   gem 'rspec-rails'
+  gem 'selenium-webdriver'
+  gem 'capybara'
   gem 'database_cleaner'
 end
