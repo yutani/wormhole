@@ -3,9 +3,9 @@ default: &default
   adapter: postgresql
   encoding: unicode
   pool: 5
+  user: wormhole
+  password: wormhole
   host: localhost
-  username: wormhole
-  password: rooroo
 
 development:
   <<: *default
@@ -17,6 +17,7 @@ test:
 
 production:
   <<: *default
+  host: localhost
   database: wormhole_production
   username: wormhole
   password: <%= ENV['WORMHOLE_DATABASE_PASSWORD'] %>

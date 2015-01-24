@@ -13,11 +13,20 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'bcrypt', '~> 3.1.7'
 gem 'slim', '~> 3.0.1'
 
+gem 'figaro'
+
+# Use Unicorn as the app server
+# gem 'unicorn'
+
+# Use Capistrano for deployment
+# gem 'capistrano-rails', group: :development
+
 group :development, :test do
   gem 'better_errors', '~> 2.1.1'
+  gem 'binding_of_caller'
   gem 'web-console', '~> 2.0'
   gem 'spring'
-  gem 'pry', '~> 0.10.1'
+  gem 'pry-byebug'
 end
 
 group :test do
